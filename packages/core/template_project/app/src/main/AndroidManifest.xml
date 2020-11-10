@@ -22,6 +22,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="<%= packageId %>">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <% for(const permission of androidManifest.permissions) { %>
         <uses-permission android:name="<%= permission %>"/>
     <% } %>

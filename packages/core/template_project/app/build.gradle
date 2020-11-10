@@ -143,6 +143,8 @@ android {
 
         resValue "bool", "enableSiteSettingsShortcut", twaManifest.enableSiteSettingsShortcut
         resValue "string", "orientation", twaManifest.orientation
+
+        buildConfigField("String", "MY_TRACKER_KEY", '<%= myTrackerKey %>')
     }
     buildTypes {
         release {
@@ -203,4 +205,7 @@ dependencies {
     <% for(const dep of buildGradle.dependencies) { %>
         implementation '<%= dep %>'
     <% } %>
+    implementation 'com.my.tracker:mytracker-sdk:2.0.+'
+    implementation 'com.android.installreferrer:installreferrer:1.1.2'
+    implementation 'com.google.android.gms:play-services-ads-identifier:15.0.1'
 }
