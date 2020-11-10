@@ -143,8 +143,6 @@ android {
 
         resValue "bool", "enableSiteSettingsShortcut", twaManifest.enableSiteSettingsShortcut
         resValue "string", "orientation", twaManifest.orientation
-
-        buildConfigField("String", "MY_TRACKER_KEY", '<%= myTrackerKey %>')
     }
     buildTypes {
         release {

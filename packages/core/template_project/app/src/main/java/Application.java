@@ -19,7 +19,6 @@ import com.my.tracker.MyTracker;
 <% for(const imp of applicationClass.imports) { %>
   import <%= imp %>;
 <% } %>
-import <%= packageId %>.BuildConfig;
 
 public class Application extends android.app.Application {
 
@@ -37,6 +36,6 @@ public class Application extends android.app.Application {
   }
 
   public void initMyTracker() {
-      MyTracker.initTracker(BuildConfig.MY_TRACKER_KEY, this);
+      MyTracker.initTracker("myTrackerKey", this);
   }
 }

@@ -32,6 +32,7 @@ const COPY_FILE_LIST = [
   'build.gradle',
   'gradlew',
   'gradlew.bat',
+  'app/proguard-rules.pro',
   'gradle/wrapper/gradle-wrapper.jar',
   'gradle/wrapper/gradle-wrapper.properties',
   'app/src/main/res/values/colors.xml',
